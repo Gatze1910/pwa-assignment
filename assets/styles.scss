@@ -1,0 +1,73 @@
+@import "./uikit";
+@import "./todos.scss";
+
+:root {
+  --viewport-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.body-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #335566;
+  color: white;
+  height: 80px;
+
+  p {
+    margin: 0;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &-email {
+      margin-right: 10px;
+
+      span {
+        font-style: italic;
+      }
+    }
+  }
+
+  &__logout-btn {
+    border: none;
+    background-color: #24b47e;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      color: white;
+      background-color: #555;
+    }
+  }
+  &__text {
+    margin: 0;
+  }
+}
+
+.content-inside {
+  width: 360px;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    height: 60px;
+  }
+}

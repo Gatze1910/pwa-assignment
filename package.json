@@ -6,16 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm package-lock.json & rm -rf node_modules/ dist/ .next/"
   },
   "dependencies": {
-    "autoprefixer": "10.4.14",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.3",
-    "next": "13.4.3",
-    "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "@supabase/supabase-js": "^1.28.0",
+    "@supabase/ui": "^0.36.0",
+    "next": "^12.0.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "uikit": "^3.16.17"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
   }
 }

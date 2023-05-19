@@ -1,0 +1,107 @@
+.todo-container {
+    margin-top: 20px;
+  }
+  
+  .todo-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .todo-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  
+    input {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      margin-right: 10px;
+    }
+  
+    .btn-black {
+      border: none;
+      background-color: #333;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+
+.todo-list {
+    width: 100%;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+    .todo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-bottom: 1px solid #ced4da;
+  
+      .checkbox {
+        display: flex;
+        align-items: center;
+  
+        .checkbox-input {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
+          appearance: none;
+          border: 2px solid #ced4da;
+          border-radius: 4px;
+          outline: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:checked {
+            background-color: #24b47e;
+            border-color: #24b47e;
+          }
+        }
+      }
+  
+      .task {
+        flex-grow: 1;
+        margin-right: 16px;
+        color: #333;
+        font-weight: 500;
+      }
+  
+      .delete-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+  
+        .delete-icon {
+          width: 20px;
+          height: 20px;
+          fill: #666;
+          transition: fill 0.3s ease;
+  
+          &:hover {
+            fill: red;
+          }
+        }
+      }
+    }
+  }
+  
